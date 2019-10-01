@@ -1,0 +1,25 @@
+
+INSERT INTO phurcase(specialied_field, officer, introducer_type, introducer, introducer_located, request_section, request_date, evaluate_date,
+                     evaluate1, evaluate1_1, evaluate1_2, evaluate2, evaluate3, evaluate_point, evaluate_result, contract_type, management_document, comment,
+                     customer_code, japanese_syllabary, customer_name, customer_name_k, representative_name, representative_name_k, address1, address2, address_k,
+                     zip_cd, tel_no, fax_no, capital, iso, created_date
+) VALUES('専門分野','担当者','1','','','開発部門','20190918','20190918',
+        '1','5','','3','4','12','1','2','1','TEST DATA',
+         'T001','て','top-gate','トップゲート','加藤','かとう','埼玉県戸田市シモ前','戸田団地','サイタマ件',
+         '3510034','01075510831','01075510831','200','1',now());
+
+
+INSERT INTO phurcase(specialied_field, officer, introducer_type, introducer, introducer_located, request_section, request_date, evaluate_date,
+                     evaluate1, evaluate1_1, evaluate1_2, evaluate2, evaluate3, evaluate_point, evaluate_result, contract_type, management_document, comment,
+                     customer_code, japanese_syllabary, customer_name, customer_name_k, representative_name, representative_name_k, address1, address2, address_k,
+                     zip_cd, tel_no, fax_no, capital, iso, created_date
+) VALUES('専門分野','渡辺','1','','','運用部門','20190818','20190901',
+        '1','5','','3','4','12','1','2','1','TEST DATA222222',
+         'T001','て','top-gate','トップゲート','加藤','かとう','埼玉県戸田市シモ前','戸田団地','サイタマ件',
+         '3510034','01075510831','01075510831','200','1',now());
+
+
+
+
+
+curl -X POST -H "Content-Type: application/json" -d '{"specialed_field":"専門分野"}' localhost:8080/v1/phurcase_search
